@@ -1,6 +1,6 @@
 import redis
 
-HOST_NAME = '127.0.0.1'
+HOST_NAME = 'redis'
 PORT = 6379
 
 r = redis.Redis(
