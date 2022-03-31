@@ -1,0 +1,16 @@
+#Instlacija paketa
+pip install <NAME>
+
+#Instalacija virtualnog okruzenja
+python -m venv <DESIRED_NAME>
+
+#Aktivacija virutalnog okruženja
+<DESIRED_NAME>\Scripts\activate
+
+#ili 
+<DESIRED_NAME>\Scripts\activate.bat
+
+#dektivacija
+deactivate
+
+$env:FLASK_DEBUG=1  
