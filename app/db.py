@@ -8,12 +8,16 @@ r = redis.Redis(
     port=PORT, 
     password='')
 
+#r.set('count', "0")
 
 def count():
-    r.set('name', 'Kristijan')
-    name = r.get('name')
-    return name
+    r.incr('count')
+
+def get_count():
+    currentCount = str(r.get('count').decode('utf-8'))
+    return currentCount
 
 
 def reset():
-    pass
+    r.set('count', "0")
+
